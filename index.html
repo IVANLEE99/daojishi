@@ -75,7 +75,8 @@ ul li { display:inline; font-size:10em; text-align:center; font-family:'BebasNeu
 </style>
 <script type="text/javascript" src="jq.js"></script>
 <script type="text/javascript">
-$(document).ready(function GetRTime(){
+$(document).ready(function(){
+function GetRTime(){
     var EndTime= new Date('2017/01/26 00:00:00');
     var NowTime = new Date();
     var t =EndTime.getTime() - NowTime.getTime();
@@ -99,7 +100,8 @@ $(document).ready(function GetRTime(){
    
 
 }
-		  setInterval(GetRTime,0);
+		  setInterval(GetRTime,1000);
+}
 );
 </script>
 </head>
