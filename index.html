@@ -96,9 +96,11 @@ $(document).ready(function GetRTime(){
 	$("#minute").html(( m < 10 ? "0" : "" ) + m);
 	$("#days").html(( d < 10 ? "0" : "" ) + d);
   
-   setInterval(GetRTime,0);
+   
 
-});
+}
+		  setInterval(GetRTime,1000);
+);
 </script>
 </head>
 <body>
